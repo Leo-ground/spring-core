@@ -17,6 +17,8 @@
   - psvm 메인메소드 자동생성 
   - soutv system out println
   - F2 오류부분 이동
+  - test자동생성 ctrl+shift+T
+  - Ctrl+E 히스토리보기
 ## 테스트 tip
 - Assertions (org.assertj.core.api) 검증
 - 
@@ -33,3 +35,5 @@
 ## Test
 - 단위테스트를 해야 테스트 시간을 줄일 수 있다.
 - 테스트의 기본적인 개념은 //given //when //then 이다.
+- @DisplayName("한글표시가능") /Junit5부터 적용
+- 실패 테스트도 항상 해야 한다
