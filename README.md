@@ -16,6 +16,9 @@
   - 이러한 AppConfig를 DI컨테이너라고 부르며, Spring을 통해서 사용할때는 ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class); 형식으로 쓴다.
   - 단순하게 생각하면 코드가 더 복잡해지는데 Spring의 장점이 무엇인지 생각해보자
 
+## Bean조회방법
+- bean조회 방법을 공부하면서 Spring의 Bean생성 개념을 이해하고, Bean을 설계할 경우 사용하는 방법을 습득한다.
+
 ## InteliJ tip
 - settings gradle -> inteliJ
 - settings keymap 단축키검색
