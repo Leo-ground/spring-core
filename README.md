@@ -13,6 +13,11 @@
     - 실행클래스에서는 appConfig를 new연산자로 선언후 인터페이스에 appConfig의 의존성을 받을 수 있게 한다
     - 다시 정리하면 AppConfig에 어떤 의존성을 넣을 수 있을지를 구성하고 실행클래스에서는 appconfig를 통해 의존성을 받아 인터페이스를 생성해준 뒤, 구현객체에서는 이것을 받아 실행하게 된다.
     - AppConfig를 구성할때 클래스 다이어그램이 한눈에 보일 수 있게 세분화해서 클래스를 구성해준다.
+  - 이러한 AppConfig를 DI컨테이너라고 부르며, Spring을 통해서 사용할때는 ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class); 형식으로 쓴다.
+  - 단순하게 생각하면 코드가 더 복잡해지는데 Spring의 장점이 무엇인지 생각해보자
+
+## Bean조회방법
+- bean조회 방법을 공부하면서 Spring의 Bean생성 개념을 이해하고, Bean을 설계할 경우 사용하는 방법을 습득한다.
 
 ## InteliJ tip
 - settings gradle -> inteliJ
@@ -20,11 +25,12 @@
   - alt+ ins generate  
   - ctrl+shift+enter 자동생성 ;
   - psvm 메인메소드 자동생성 
-  - soutv system out println
+  - soutv system out println 
   - F2 오류부분 이동
   - test자동생성 ctrl+shift+T
   - Ctrl+E 히스토리보기
   - Ctrl+Alt+M : extract method
+  - iter 향상된 for문 자동생성
 ## 테스트 tip
 - Assertions (org.assertj.core.api) 검증
 - 
