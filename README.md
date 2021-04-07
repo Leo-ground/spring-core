@@ -18,6 +18,13 @@
 
 ## Bean조회방법
 - bean조회 방법을 공부하면서 Spring의 Bean생성 개념을 이해하고, Bean을 설계할 경우 사용하는 방법을 습득한다.
+- bean의 자식 타입은 부모 호출시 다같이 딸려오게 된다
+- 스프링에서는 최상위 bean은 beanFactory, 이를 상속받은 ApplicationContext를 제공한다
+- 개발시에는 단순한 bean관리 외에 다양한 기능이 필요하므로 ApplicationContext에 다음과 같은 기능을 제공한다
+- MessageSource: 메세지소스를 활용한 국제화 기능
+- EnvironmentCapabble: 환경변수
+- ApplicationEventPublicsher: 애플리케이션 이벤트
+- ResourceLoader: 편리한 리소스 조회
 
 ## InteliJ tip
 - settings gradle -> inteliJ
