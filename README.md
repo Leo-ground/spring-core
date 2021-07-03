@@ -56,3 +56,15 @@
 - 테스트의 기본적인 개념은 //given //when //then 이다.
 - @DisplayName("한글표시가능") /Junit5부터 적용
 - 실패 테스트도 항상 해야 한다
+
+
+## 어노테이션 의미
+- 어노테이션을 사용해 스프링 프레임워크가 해당 마킹을 찾아 DI를 할 수 있게 한다.(적절한시기에 자동으로 해당내용을 실행)
+- @Confinguration : 해당 클래스가 설정 정보임을 마킹
+- @Been : 해당 메서드가 Been임을 마킹
+
+
+## 스프링 적용 
+- ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);   //()안은 설정클래스
+- applicationContext.getBeen("memberService".MemberService.class);//(불러올 Been 메서드 이름, 반환타입은 이걸로 설정할꺼야)
+- 의미: AppConfig클래스에 적용한 어노테이션을 컨테이너에서 불러와 사용할 수 있게 한다.
